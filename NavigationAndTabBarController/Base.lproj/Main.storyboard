@@ -1,24 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MpE-sA-UsH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Telugu Movies-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtH-Ye-ptR">
+                                <rect key="frame" x="86" y="99" width="182" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="parasuram SP"/>
+                                <connections>
+                                    <segue destination="4Vy-oe-reH" kind="show" id="RgT-ed-Zy1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyH-5E-pel">
+                                <rect key="frame" x="93" y="255" width="175" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="kshana kshanam"/>
+                                <connections>
+                                    <segue destination="mBi-Ad-gem" kind="show" id="ex4-5a-AF9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Telugu Movies" id="Jkv-jA-brW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2012" y="-2056"/>
+        </scene>
+        <!--S.P.Parasuram-->
+        <scene sceneID="Iwy-Ma-PIT">
+            <objects>
+                <viewController id="4Vy-oe-reH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IcQ-WV-q6E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="paru" translatesAutoresizingMaskIntoConstraints="NO" id="GKI-yA-RRE">
+                                <rect key="frame" x="24" y="90" width="327" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFf-J5-F9u">
+                                <rect key="frame" x="24" y="286" width="327" height="311"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">    S. P. Parasuram is a 1994 Telugu-language Indian feature film directed by Ravi Raja Pinisetty and produced by Allu Aravind, starring Chiranjeevi, Sridevi, Devaraj and Harish Kumar in lead roles.
+
+This film was a remake of Tamil blockbuster Walter Vetrivel starring Sathyaraj. The Hindi dubbed version is titled Azaad Desh Ka Andhaa Kanoon in spite of being remade in Hindi as Khuddar starring Govinda and Karishma Kapoor. The film also had a Malayalam-language dubbed version titled as Super Hero S.P.Parasuram</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qC9-Uk-Uk4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="S.P.Parasuram" id="aZt-Rv-EMv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RC4-gI-QPZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2492" y="-961"/>
+        </scene>
+        <!--kshana kshnam-->
+        <scene sceneID="lkp-EO-BLb">
+            <objects>
+                <viewController id="mBi-Ad-gem" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XJ5-yh-h3H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ksha" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-q0-AXQ">
+                                <rect key="frame" x="9" y="77" width="343" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNu-hZ-FqH">
+                                <rect key="frame" x="9" y="354" width="343" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">           Kshana Kshanam (English: Moment to Moment) is a 1991 Telugu neo-noir road film written and directed by Ram Gopal Varma. The film stars Venkatesh, Sridevi and Paresh Rawal in the lead roles. The sound track and background score composed by M. M.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OPX-L5-wkH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="kshana kshnam" id="Bem-jX-Zwh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh5-p3-357" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1719" y="-961"/>
+        </scene>
+        <!--Hindi Movies-->
+        <scene sceneID="XnE-LO-hmT">
+            <objects>
+                <viewController id="tX8-tI-Par" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dxx-1O-g0o">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOG-fH-t8Z">
+                                <rect key="frame" x="89" y="260" width="196" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Roop ki Rani"/>
+                                <connections>
+                                    <segue destination="ZKj-9H-t51" kind="show" id="ZoM-3y-lsH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="493-3s-Brf">
+                                <rect key="frame" x="89" y="93" width="196" height="129"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Gair Kanooni"/>
+                                <connections>
+                                    <segue destination="70Y-KC-EXL" kind="show" id="HQy-cz-y5V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="CB3-Wx-DIK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hindi Movies" id="ibr-vH-gXu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dZK-GU-Fa2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-674" y="-2057"/>
+        </scene>
+        <!--Gair Kanooni-->
+        <scene sceneID="Tdx-lN-6Pu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fph-px-Qh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="70Y-KC-EXL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ipB-m1-vxj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gair Kanooni" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-zg-8JA">
+                                <rect key="frame" x="67" y="134" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBT-Ma-zPv">
+                                <rect key="frame" x="29" y="305" width="317" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Gair Kanooni is a 1989 Hindi film which stars Govinda and Sridevi in the lead roles. Rajinikanth plays a supporting role. The film was an average grosser at the box office. It was later dubbed in Tamil as Rakkamma Kaiyathattu</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Jp2-So-IMK"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gair Kanooni" id="XUj-pC-jrc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-823" y="-961"/>
+        </scene>
+        <!--Roop ki Rani Choron ki Raja-->
+        <scene sceneID="X9n-Cd-dYy">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rz7-Tj-tn5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="ZKj-9H-t51" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8pi-d5-zOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-c5-Az9">
+                                <rect key="frame" x="20" y="266" width="334" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Roop ki Rani Choron Ka Raja (The Queen of Beauty and the King of Thieves) is a 1993 Indian Hindi action comedy film starring Anil Kapoor, Sri Devi, Jackie Shroff, Anupam Kher and Johnny Lever. It was the highest budget film of that time. The film was directed by Satish Kaushik and written by Javed Akhtar. The project was announced in 1987 and was initially being directed by Shekhar Kapur, who left the project halfway through, he was subsequently replaced by Satish Kaushik, despite its massive budget, escalated by the delay, it flopped at the box office upon its release in 1993.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roop ki Rani" translatesAutoresizingMaskIntoConstraints="NO" id="5Ra-d4-TOB">
+                                <rect key="frame" x="16" y="81" width="338" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="qAe-I8-cep"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roop ki Rani Choron ki Raja" id="q2j-Vv-pPE"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-18.399999999999999" y="-961.16941529235385"/>
+        </scene>
+        <!--Sigappu Rojakkal-->
+        <scene sceneID="shS-Rx-rYu">
+            <objects>
+                <viewController id="BxO-Rb-Wgp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9cq-zQ-Im0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Sigappu Rojakkal" translatesAutoresizingMaskIntoConstraints="NO" id="GBm-9f-xRA">
+                                <rect key="frame" x="32" y="90" width="315" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJ6-WQ-V6S">
+                                <rect key="frame" x="16" y="275" width="336" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Sigappu Rojakkal (English: Red Roses) is a 1978 Indian Tamil-language psychological thriller film starring Kamal Haasan and Sridevi in lead roles. Co-written and directed by P. Bharathiraja, it features music by Ilaiyaraaja and cinematography by P. S. Nivas.[1]
+
+In an era of over-dramatised acting in Tamil films, Sigappu Rojakkal was one of the notable exceptions. The film completed a 175-day run at the box office. It won two Filmfare Awards in the Best Actor and Best Director categories.
+
+This film was dubbed in Telugu as Erra Gulabilu.[2] It was remade in Hindi as Red Rose starring Rajesh Khanna and Poonam Dhillon in lead roles.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="YZG-OS-QxL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sigappu Rojakkal" id="jWd-Nx-vgF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cWu-N3-jz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-961.16941529235385"/>
+        </scene>
+        <!--Varumayin Niram Sivappu-->
+        <scene sceneID="wNu-MD-pNU">
+            <objects>
+                <viewController id="4vj-Ty-XqO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gEt-WA-22R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Varumayin Niram Sivappu" translatesAutoresizingMaskIntoConstraints="NO" id="kne-4i-T9J">
+                                <rect key="frame" x="25" y="92" width="314" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4Y-KK-apV">
+                                <rect key="frame" x="15" y="263" width="324" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Varumaiyin Niram Sivappu (The Colour of Poverty is Red) is a 1980 Tamil-language Indian drama film directed by K. Balachander,[1] starring Kamal Haasan and Sridevi in the lead roles. The film was simultaneously shot in Telugu as Aakali Rajyam (Kingdom of Hunger), released the following year.[2] The film was also remade in Hindi as Zara Si Zindagi with Kamal Haasan and Anita Raj in 1983, directed by K. Balachander himself.
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="hEA-XJ-zbG"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Varumayin Niram Sivappu" id="XYt-1v-xRh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b55-TN-Y12" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1936.8" y="-961.16941529235385"/>
+        </scene>
+        <!--Tamil Movies-->
+        <scene sceneID="cNu-24-Edc">
+            <objects>
+                <viewController id="hDn-F6-PNn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DGv-ob-sLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48Q-Dq-aak">
+                                <rect key="frame" x="123" y="107" width="129" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Sigappu Rojakkal"/>
+                                <connections>
+                                    <segue destination="BxO-Rb-Wgp" kind="show" id="zP8-ta-OHj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvx-ok-Rui">
+                                <rect key="frame" x="123" y="263" width="133" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Varumayin Niram Sivappu"/>
+                                <connections>
+                                    <segue destination="4vj-Ty-XqO" kind="show" id="R9L-AB-KZv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="C5p-Zf-Nio"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tamil Movies" id="v5c-8R-HmK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGa-N2-w7C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="-2057"/>
+        </scene>
+        <!--telugu movies-->
+        <scene sceneID="hd8-uA-cbM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Ky-Qa-ZbQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="telugu movies" id="396-kd-s5z"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ktb-EW-mR4">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9tA-EB-RV0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dye-Xe-o5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2012" y="-2992"/>
+        </scene>
+        <!--Hindi Movies-->
+        <scene sceneID="Db6-ga-Agi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QJ7-Id-05h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Hindi Movies" id="xNh-6l-bRP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tg4-sc-YuN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tX8-tI-Par" kind="relationship" relationship="rootViewController" id="d7S-6D-8Ta"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKX-AB-Fbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-673" y="-2992"/>
+        </scene>
+        <!--Tamil Movies-->
+        <scene sceneID="Ko8-3l-yo6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rW6-9t-1dH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tamil Movies" id="QTZ-yI-A2b"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SAl-8k-tOy">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hDn-F6-PNn" kind="relationship" relationship="rootViewController" id="iaZ-G6-bKj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="39g-wY-2CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543" y="-2992"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EJB-vp-LTb">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MpE-sA-UsH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f0f-10-1l1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9Ky-Qa-ZbQ" kind="relationship" relationship="viewControllers" id="faF-f6-mWR"/>
+                        <segue destination="QJ7-Id-05h" kind="relationship" relationship="viewControllers" id="8S9-Le-3cC"/>
+                        <segue destination="rW6-9t-1dH" kind="relationship" relationship="viewControllers" id="vh1-Md-s9j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y0W-Ur-R7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822" y="-3866"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Gair Kanooni" width="1280" height="720"/>
+        <image name="Roop ki Rani" width="290" height="390"/>
+        <image name="Sigappu Rojakkal" width="182" height="268"/>
+        <image name="Varumayin Niram Sivappu" width="350" height="350"/>
+        <image name="ksha" width="182" height="268"/>
+        <image name="kshana kshanam" width="480" height="360"/>
+        <image name="parasuram SP" width="182" height="268"/>
+        <image name="paru" width="400" height="263"/>
+    </resources>
 </document>
